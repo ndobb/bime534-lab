@@ -1,0 +1,65 @@
+#main {
+    background-color: rgb(245, 247, 252);
+    font-family: Roboto;
+    padding: 20px;
+}
+
+.header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#metamap-output span {
+    margin-left: 4px;
+}
+
+#metamap-output span:first-child {
+    margin-left: 0;
+}
+
+.post {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 2px 0px;
+    color: rgb(50,50,50);
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.post-body {
+    margin-bottom: 6px;
+}
+
+.post-num {
+    background-color: rgba(116, 182, 243, 0.25);
+    border-radius: 6px;
+    display: inline-block;
+    height: 20px;
+    text-align: center;
+    width: 22px;
+}
+
+.concept {
+    background-color: rgba(136, 231, 164, 0.5);
+    border-radius: 4px;
+    padding: 1px 2px;
+}
+
+.author {
+    color: rgb(61, 67, 73);
+    display: inline-block;
+    font-size: 11px;
+}
+
+.author > span {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 4px;
+    padding: 4px;
+}
+
+
