@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container-fluid" id="main" >
-        <div class="row">
+        <div class="header-row row">
             <div class="col-md-4">
                 <div class='header'>
                     Original Post
@@ -25,9 +25,13 @@
                 <div class='header'>
                     Coder 1
                 </div>
-                <div>
-                    <input id="show-results-user1" type="checkbox" />
-                    <span>Show results</span>
+                <div class="options-container">
+                    <input id="show-results-user-1" type="checkbox" checked />
+                    <span>Show codes</span>
+                    <span id="get-user-1-json" class="app-button">Save Codes to Json</span>
+                    <div id="user-1-json" class="json-result">
+                        <span class="close">×</span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
@@ -35,8 +39,12 @@
                     Coder 2
                 </div>
                 <div>
-                    <input id="show-results-user2" type="checkbox" />
-                    <span>Show results</span>
+                    <input id="show-results-user-2" type="checkbox" checked />
+                    <span>Show codes</span>
+                    <span id="get-user-2-json" class="app-button">Save Codes to Json</span>
+                    <div id="user-2-json" class="json-result">
+                        <span class="close">×</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,7 +55,8 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/selectize.min.js"></script>
-    <script src="js/custom-codes.js"></script>
+    <script src="js/selected-codes.js"></script>
+    <script src="js/init.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
