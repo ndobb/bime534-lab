@@ -11,6 +11,14 @@
 </head>
 <body>
     <div class="container-fluid" id="main" >
+        <div class="top-header-row row">
+            <div>
+                <input id="show-kappa-score" type="checkbox" />
+                <span>Show Cohen's Kappa scores</span>
+                <input id="show-comparison-tables" type="checkbox" />
+                <span>Show Comparison tables for each post</span>
+            </div>
+        </div>
         <div class="header-row row">
             <div class="col-md-4">
                 <div class='header'>
@@ -51,10 +59,11 @@
         <div class="" id="metamap-output">
         </div>
     </div>
-    <script src="js/metamaplite-output.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/selectize.min.js"></script>
+    <script src="js/cohens_kappa.js"></script>
+    <script src="js/metamaplite-output.js"></script>
     <script src="js/selected-codes.js"></script>
     <script src="js/init.js"></script>
     <script src="js/app.js"></script>

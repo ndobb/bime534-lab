@@ -15,24 +15,5 @@ const allCodes = [ ...new Set([
 
 // Set initial UI state
 initializeUi(allCodes);
-
-const selectionsToJson = (userId) => {
-    const $elem = $(`.user-${userId}`);
-    const vals = [];
-
-    $elem.each((i, x) => {
-        const $items = $(x).find('.selectize-input .item');
-        const arr = [];
-        $items.each((j, v) => arr.push(toObject($(v).data('value'))));
-        vals.push(arr);
-    });
-    return vals;
-};
-
-const displayJson = (userId) => {
-    const $elem = $(`#user-${userId}-json`);
-    const json = JSON.stringify(selectionsToJson(userId));
-    const $jsonEl = $(`<div class='json'>${json}</div>`)
-    $elem.append($jsonEl).addClass('show-result');
-}
+calculateKappa();
 

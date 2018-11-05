@@ -4,6 +4,48 @@
     padding: 20px;
 }
 
+.top-header-row {
+    margin-bottom: 20px;
+}
+
+.top-header-row > div {
+    margin: auto
+}
+
+#show-comparison-tables {
+    margin-left: 30px;
+}
+
+#kappa-score-wrapper {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 2px 0px;
+    display: none;
+    font-size: 13px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: right;
+    width: 600px;
+}
+
+#main.show-result #kappa-score-wrapper {
+    display: block;
+}
+
+#kappa-score-wrapper > div:first-child > span {
+    font-size: 16px;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.kappa-score {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
 .header {
     border-bottom: 1px solid rgba(0,0,0,0.1);
     font-size: 20px;
@@ -63,7 +105,7 @@
     padding: 1px 2px;
 }
 
-.show-result .concept {
+.post.show-result .concept {
     background-color: rgba(136, 231, 164, 0.5);
 }
 
@@ -108,7 +150,7 @@ input,
     padding: 4px 12px;
 }
 
-.show-result .selectize-input {
+.select-code.show-result .selectize-input {
     display: inline-block;
 }
 
@@ -157,4 +199,33 @@ input,
 
 .json-result .close:hover {
     color: rgba(243, 47, 47, 1) !important;
+}
+
+#metamap-output.show-result .comparison-table {
+    display: block;
+}
+
+.comparison-table {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 2px 0px;
+    display: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+    width: 800px;
+}
+
+.comparison-table .col-header {
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.comparison-table .col-md-3 {
+    border: 1px solid rgba(0, 0, 0, 0.025);
+}
+
+.has-data {
+    background-color: rgba(136, 231, 164, 0.5);
 }
